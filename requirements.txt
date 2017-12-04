@@ -1,0 +1,2 @@
+requests
+rfc3986
