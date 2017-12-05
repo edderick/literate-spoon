@@ -60,7 +60,9 @@ def top_stories():
     """
     Get up to 500 top stories IDs.
     """
-    return _simple_get_json_request(TOP_STORIES_URI)
+    stories = _simple_get_json_request(TOP_STORIES_URI)
+
+    return stories if stories is not None else []
 
 
 def item(news_id):
@@ -150,4 +152,5 @@ def get_normalized_top_items(num_items, items=None):
         items = get_top_items(num_items)
 
     return [normalize_news(rank, news)
-            for rank, news in enumerate(items[:num_items], start=1)]
+            for rank, news in enumerate(items[:num_items], start=1)
+            if news is not None]

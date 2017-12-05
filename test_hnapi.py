@@ -287,3 +287,17 @@ class TestHnApi(unittest.TestCase):
             self.assertEqual(item["descendants"], result["comments"])
             self.assertEqual(item["by"], result["author"])
             self.assertEqual(rank, result["rank"])
+
+    def test_normalized_top_items_error(self):
+        """
+        Test when the URL is malformed.
+        """
+        # Arrange
+        items = [None]
+        num_items = 1
+
+        # Act
+        results = hnapi.get_normalized_top_items(num_items, items)
+
+        # Assert
+        self.assertNotEqual(num_items, len(results))
