@@ -43,12 +43,12 @@ class TestHnApi(unittest.TestCase):
 
             # Check length restrictions for the title and username
             title_len = len(result["title"])
-            self.assertTrue(title_len > 0
-                            and title_len <= hnapi.MAX_TITLE_LENGTH)
+            self.assertTrue(title_len > 0 and
+                            title_len <= hnapi.MAX_TITLE_LENGTH)
 
             author_len = len(result["author"])
-            self.assertTrue(author_len > 0
-                            and author_len <= hnapi.MAX_USERNAME_LENGTH)
+            self.assertTrue(author_len > 0 and
+                            author_len <= hnapi.MAX_USERNAME_LENGTH)
 
             # Check fields value
             self.assertEqual(item["title"], result["title"])
@@ -88,12 +88,12 @@ class TestHnApi(unittest.TestCase):
 
             # Check length restrictions for the title and username
             title_len = len(result["title"])
-            self.assertTrue(title_len > 0
-                            and title_len <= hnapi.MAX_TITLE_LENGTH)
+            self.assertTrue(title_len > 0 and
+                            title_len <= hnapi.MAX_TITLE_LENGTH)
 
             author_len = len(result["author"])
-            self.assertTrue(author_len > 0
-                            and author_len <= hnapi.MAX_USERNAME_LENGTH)
+            self.assertTrue(author_len > 0 and
+                            author_len <= hnapi.MAX_USERNAME_LENGTH)
 
             # Check fields value
             self.assertNotEqual(item["title"], result["title"])
@@ -135,12 +135,12 @@ class TestHnApi(unittest.TestCase):
 
             # Check length restrictions for the title and username
             title_len = len(result["title"])
-            self.assertTrue(title_len > 0
-                            and title_len <= hnapi.MAX_TITLE_LENGTH)
+            self.assertTrue(title_len > 0 and
+                            title_len <= hnapi.MAX_TITLE_LENGTH)
 
             author_len = len(result["author"])
-            self.assertTrue(author_len > 0
-                            and author_len <= hnapi.MAX_USERNAME_LENGTH)
+            self.assertTrue(author_len > 0 and
+                            author_len <= hnapi.MAX_USERNAME_LENGTH)
 
             # Check fields value
             self.assertEqual(item["title"], result["title"])
@@ -181,12 +181,12 @@ class TestHnApi(unittest.TestCase):
 
             # Check length restrictions for the title and username
             title_len = len(result["title"])
-            self.assertTrue(title_len > 0
-                            and title_len <= hnapi.MAX_TITLE_LENGTH)
+            self.assertTrue(title_len > 0 and
+                            title_len <= hnapi.MAX_TITLE_LENGTH)
 
             author_len = len(result["author"])
-            self.assertTrue(author_len > 0
-                            and author_len <= hnapi.MAX_USERNAME_LENGTH)
+            self.assertTrue(author_len > 0 and
+                            author_len <= hnapi.MAX_USERNAME_LENGTH)
 
             # Check fields value
             self.assertEqual(item["title"], result["title"])
@@ -227,12 +227,12 @@ class TestHnApi(unittest.TestCase):
 
             # Check length restrictions for the title and username
             title_len = len(result["title"])
-            self.assertTrue(title_len > 0
-                            and title_len <= hnapi.MAX_TITLE_LENGTH)
+            self.assertTrue(title_len > 0 and
+                            title_len <= hnapi.MAX_TITLE_LENGTH)
 
             author_len = len(result["author"])
-            self.assertTrue(author_len > 0
-                            and author_len <= hnapi.MAX_USERNAME_LENGTH)
+            self.assertTrue(author_len > 0 and
+                            author_len <= hnapi.MAX_USERNAME_LENGTH)
 
             # Check fields value
             self.assertEqual(item["title"], result["title"])
@@ -273,12 +273,12 @@ class TestHnApi(unittest.TestCase):
 
             # Check length restrictions for the title and username
             title_len = len(result["title"])
-            self.assertTrue(title_len > 0
-                            and title_len <= hnapi.MAX_TITLE_LENGTH)
+            self.assertTrue(title_len > 0 and
+                            title_len <= hnapi.MAX_TITLE_LENGTH)
 
             author_len = len(result["author"])
-            self.assertTrue(author_len > 0
-                            and author_len <= hnapi.MAX_USERNAME_LENGTH)
+            self.assertTrue(author_len > 0 and
+                            author_len <= hnapi.MAX_USERNAME_LENGTH)
 
             # Check fields value
             self.assertEqual(item["title"], result["title"])
